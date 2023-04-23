@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+    .aboutMe  {
+        font-size:1rem;
+        align-self:center;
+        margin:2rem;
+    }
+    .projects-tab {
+       font-size:1.5rem;
+       width:10rem;
+       height:5rem;
+       margin:2rem;
+       margin-top:2rem;
+       border:2px solid #fff;
+    }
+    .projects-tab.border1:hover {
+        box-shadow: 10px 10px rgb(255, 0, 162);
+        background-color:rgb(255, 255, 255);
+        color:black;
+        font-size:1.5rem;
+        
+    }
+
+  }

@@ -1,0 +1,291 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    margin:0;
+    color:white;
+    font-family: 'JetBrains Mono', monospace;
+    
+}
+.container {
+    display: grid;
+    max-width:100vw;
+    height: 100vh;
+    grid-template-areas: "nav nav nav"
+    "about image image"
+    "intro intro intro"
+    "social social projects"
+    "foot foot foot";
+    grid-template-rows: 15% 30% 15% 30% 10%;
+    row-gap: 1px;
+    column-gap: 1px;
+
+}
+.container > .navbar {
+grid-area: nav;
+font-size: 28px;
+justify-content: flex-end;
+align-items: space-around;
+margin-right: 32px;
+padding: 16px;
+display:grid;
+}
+.home:hover {
+    color:rgb(255, 0, 162);
+    border: 2px solid rgb(255, 0, 162);
+}
+.contact:hover {
+    color:rgb(255, 0, 162);
+    border: 2px solid rgb(255, 0, 162);
+}
+
+.container > .about {
+    grid-area: "about";
+    justify-content:baseline;
+    align-items:center;
+    font-size: 3rem;
+    display:grid;
+    max-height: 25vw;
+    padding:0.3rem;
+    transform: rotate(270deg);
+    color:rgb(255, 255, 255);
+    background-color: black;
+    box-shadow: -0.2rem -0.5rem rgb(123, 0, 255);
+    border:1px solid #fff;
+}
+
+
+.home, .contact {
+    padding:10px;
+}
+
+
+
+.container > .picture {
+    grid-area: image;
+    display:grid;
+    justify-content: flex-start;
+}
+.beyza {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    
+}
+.container > .introduction {
+    grid-area: intro;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom:0.5rem;
+    display:grid;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(190, 129, 255);
+}
+.container > .social-media {
+    display:grid;
+    justify-content:flex-start;
+    align-items:flex-end;
+    max-height: 50vh;
+    margin: 1rem 1rem 0 0;
+    width:3rem;
+    font-size: 2rem;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0.5rem 0.5rem rgb(123, 0, 255);
+
+}
+.projects-tab {
+    grid-area: projects;
+    align-items: center;
+   
+    font-size: 3rem;
+    margin: 1rem;
+    margin-top:0;
+    display:grid;
+    max-width: 100vw;
+    padding:0.4rem;
+    color:rgb(255, 255, 255);
+    background-color: black;
+    box-shadow: 0.2rem 0.5rem  rgb(123, 0, 255);
+    transition: 0.1s all fade-in;
+    border:1px solid #fff;
+}
+.border:hover
+{
+        box-shadow: -15px -15px rgb(255, 0, 162);
+        background-color:rgb(255, 255, 255);
+        color:black;
+        font-size: 3rem;
+        transition: 0.2s ease-out;    
+}
+.border1:hover {
+    box-shadow: 20px 20px rgb(255, 0, 162);
+    background-color:rgb(255, 255, 255);
+    font-size: 3rem;
+    transition: 0.2s ease-out;    
+    color:black;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+.social:hover {
+    color:rgb(255, 0, 162);
+}
+.navbarprojects {
+    font-size: 28px;
+    padding: 16px;
+    display:flex;
+    justify-content: flex-end;
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+
+    }
+.projects {
+    display: grid;
+    align-items:center;
+    justify-content:space-around;
+    text-align:center;
+    width:100vw;
+    min-height:100vh;
+    background: black;
+    color:rgb(255, 255, 255);
+
+}
+.projects > #gridItem {
+    border:0.1px solid rgb(255, 255, 255);
+}
+ .projects > #gridItem > a:hover {
+    color: rgb(0, 0, 0);
+    background:rgb(255, 255, 255);
+    
+}
+.aboutMe {
+    display: flex;
+    margin: 0 auto;
+    margin-top:15%;
+    max-height: 50vh;
+    font-size: 1.5rem;
+    position: absolute;
+    color:rgb(255, 255, 255);
+    border: 5px solid rgb(255, 0, 162);
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    z-index: -1;
+}
+.aboutMe p {
+    justify-self: center;
+}
+.container > .contactMe {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width:100vw;
+    height: 70vh;
+    text-align: center;
+    margin: 0 auto;
+}
+.contactName, .contactMail {
+    all: unset;
+    color:rgb(123, 0, 255);
+    border: 3px solid rgb(123, 0, 255);
+    text-decoration: none;
+    width: 300px;
+    height: 50px;
+
+}
+.labels {
+    margin: 2px;
+    padding: 2px;
+    color: rgb(255, 255, 255);
+ 
+}
+.textArea {
+    all: unset;
+    width: 300px;
+    height: 100px;
+    border: 3px solid rgb(255, 0, 162);
+    color:rgb(123, 0, 255);
+}
+
+.contactButton {
+    all: unset;
+    width: 300px;
+    height: 50px;
+    color:rgb(123, 0, 255);
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid rgb(123, 0, 255);
+}
+.contactButton:hover {
+    background: linear-gradient(rgb(255, 0, 162),rgb(123, 0, 255));
+    color:white;
+}
+#gridItem > h2 {
+    display: grid;
+    font-size: 1.5rem;
+    padding:0.2rem;
+    justify-content: center;
+}
+#gridItem > a {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding:0.2rem;
+}
+.gradient-border {
+      background: linear-gradient(
+        60deg,
+        rgb(123, 0, 255),
+        rgb(255, 0, 162),
+        rgb(255, 255, 255),
+        rgb(123, 0, 255)
+      );
+      background-size: 300% 300%;
+      background-position: 0 50%;
+      border-radius: calc(2 * var(--border-width));
+      animation: moveGradient 4s alternate infinite;
+    }
+  .social {
+    margin:0.5rem;
+  }
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+ .home:hover, .contact:hover{
+    color:rgb(255, 0, 162);
+    border: 2px solid rgb(255, 0, 162);
+  }
+  .heading {
+    color:black;
+  }
+  @media screen and (max-width: 768px) {
+    .container > .about{
+        font-size:2.5rem;
+        align-self:center;
+        margin:2rem;
+        border:1px solid #fff;
+    }
+    .projects-tab {
+       font-size:2.5rem;
+       margin:2rem;
+       margin-top:2rem;
+       border:1px solid #fff;
+       margin-right:1rem;
+    }
+    .projects-tab.border1:hover {
+        box-shadow: 15px 15px rgb(255, 0, 162);
+        background-color:rgb(255, 255, 255);
+        color:black;
+        font-size:2.5rem;
+        
+    }
+  
+  }
